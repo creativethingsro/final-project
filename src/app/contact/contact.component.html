@@ -1,0 +1,11 @@
+<h2>Formular contact</h2>
+<p>Va rugam sa ne scrieti aici cererile dumneavoastra</p>
+<form [formGroup]="contactForm" (ngSubmit)="submit()" class="contact">
+    <input formControlName="name" type="text" placeholder="Nume si Prenume" required>
+    <input formControlName="reservationId" type="number" placeholder="Numar Rezervare">
+    <input formControlName="telephone" type="text" placeholder="Telefon" required>
+    <input formControlName="email" type="text" placeholder="Email">
+    <textarea formControlName="message" placeholder="Mesaj" rows="4" cols="30"></textarea>
+    <button type="submit">Trimite mesaj</button>
+
+</form>

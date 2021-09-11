@@ -1,0 +1,57 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "name": "Lebedei Studio",
+      "description": "Stati in inima Bucurestiului. Situat la 500 de Piata Victoriei si in vecinatatea Muzeul Taranului Roman acesta locatie este potrivita pentru calatorii de afaceri sau medicale mai lungi. In raza de 500 m se afla sediile centrale ale Banci Romane de Dezvoltare, First Bank, Clinica Sanador, Guvernul Romaniei. Studioul este dotat cu Smart TV, bucatarie complet echipata, baie cu cada si dus, uscator de par, fier de calcat. Studioul are baie privatacu articole de toaleta gratuite",
+      "address": "Lebedei 15, apt 1",
+      "photos": [
+        "assets/StudioLebedei/1.jpg",
+        "assets/StudioLebedei/2.jpg",
+        "assets/StudioLebedei/3.jpg"
+      ],
+      "facilities": [
+        "Aer condiționat",
+        "Ustensile esențiale de gătit",
+        "Spațiu de muncă dedicat",
+        "Veselă și argintărie",
+        "Uscător automat de rufe"
+      ],
+      "maximumGuest": "4",
+      "price": 125,
+      "extraGuest": 25
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "propertyId": 1,
+      "nameGuest": "John Graw",
+      "numberOfGuest": 1,
+      "addressOfGuest": "Bucharest, Bd.Iuliu Maniu 9",
+      "telephoneOfGuest": "0040268345789",
+      "emailOfGuest": "teste@emails.com",
+      "totalPrice": 250,
+      "checkIn": "11/10/2021",
+      "checkOut": "13/10/2021"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Popescu Dorina",
+      "reservationId": 1,
+      "telephone": "",
+      "email": "teste@emails.com",
+      "message": ""
+    },
+    {
+      "name": "Folea",
+      "reservationId": null,
+      "telephone": "0040722523387",
+      "email": "",
+      "message": "sfjdgndf jk",
+      "id": 2
+    }
+  ]
+}

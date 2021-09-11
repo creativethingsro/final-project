@@ -1,0 +1,30 @@
+<h1>Locatiile noastre</h1>
+
+<div class="search">
+    <input type="search" placeholder="search property" (keyup)="search($event)">
+</div>
+<br>
+<p></p>
+<form [formGroup]="locationForm" (ngSubmit)="submit()" class="location">
+    <input formControlName="name" type="text" placeholder="Nume Locatie">
+    <textarea formControlName="description" placeholder="Descriere"></textarea>
+    <input formControlName="address"type="text" placeholder="Adresa">
+    <input formControlName="photos" type="text" placeholder="Photos">
+    <input formControlName="facilities" type="text" placeholder="Dotari">
+    <input formControlName="maximGuest" type="number" placeholder="Maximum Guest">
+    <input formControlName="price" type="number" placeholder="Pret pe noapte">
+    <input formControlName="extraGuest" type="number" placeholder="Extra Guest">
+    <button type="submit">Creaza proprietate</button>
+
+</form>
+
+<br>
+
+<div *ngFor="let property of properties" class="property">
+    <img width="300"
+    [src]="property.photos[0]" alt="">
+    <h3>{{ property.name }}</h3>
+    <p>{{ property.description}}</p>
+    <button routerLink="/properties/{{property.id}}">Mai mult...</button>
+</div>
+
